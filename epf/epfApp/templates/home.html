@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <style>
+          body {
+                  background-color: powderblue;
+                  max-width: 900px;
+                  margin: auto;
+                }
+          p {
+              color: black;
+              font-family: courier;
+              font-size: 100%;
+              font-weight: bold;
+            }
+          .button {
+                  display: inline-block;
+                  padding: 5px 10px;
+                  font-size: 20px;
+                  cursor: pointer;
+                  text-align: center;
+                  color: #fff;
+                  background-color: #4CAF50;
+                  border: none;
+                  border-radius: 10px;
+                  box-shadow: 0 5px #999;
+          }
+          .button:hover {background-color: #3e8e41}
+          .button:active {
+            background-color: #3e8e41;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+          }
+        </style>
+        <title>Temporal Graph</title>
+    </head>
+    <body>
+      <form method="post" enctype="multipart/form-data">
+        
+        {% csrf_token %} {{ form.as_p }}
+        <h5>Use 01 Jan 2023 as date format</h5>
+        <button type="submit" class="button">Submit</button>
+      </form>
+    </body>
+</html>
