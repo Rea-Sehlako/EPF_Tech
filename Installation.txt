@@ -1,0 +1,13 @@
+Steps
+The code is on the master branch instead or the main branch
+1. Extract the zip file: Extract the contents of the zip file to a directory of your choice.
+2. Activate the virtual: Navigate to the project directory in the terminal and run "source virtual/scripts/activate"
+3. Install dependencies: Navigate to the application directory(epf) in the terminal and run pip install -r requirements.txt 
+	to install the required dependencies for the project.
+4. Run migrations: Run the following commands to apply the migrations and create the required tables in the database: 
+	python manage.py makemigrations then run python manage.py migrate
+5. Start the server: Python manage.py runserver.
+
+
+To check for the recently added excel file you can go to > epf> excel
+To check for the saved graphs you can go to epf> static > images
